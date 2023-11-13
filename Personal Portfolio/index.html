@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,200&family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ----------home----------- -->
+    <header class="header">
+        <div class="left">
+            <h2 class="logo">Port<span>folio</span></h2>
+        </div>
+        <div class="center">
+            <nav>
+                <ul>
+                    <li><a href= "#">Home </a></li>
+                    <li><a href= ".about">About</a></li>
+                    <li><a href= "#">Skills</a></li>
+                    <li><a href= "#">Projects</a></li>
+                    <li><a href= "#">Contact</a></li>    
+                </ul>
+            </nav>
+
+            <div class="tag-line">
+                <p>Hi, I am <span style="color:blue ; font-size: 80px ; font-weight:bold" >Kabin </span></p>
+                <h1>Dongol Maharjan</h1>
+                <button class="button-1">Hire me</button>
+            </div>
+        </div>
+    </header>
+
+    <!--------about-------->
+    <div class="about">
+            <div class="about-text">
+				<h2>About Me</h2>
+				<p>I am a second year IT student with great interest in web development. Apart from college, I am currently spending my leisure time working on web-development projects. I strive to enhances my knowledge and skills as i discover new things.</p>
+				<button type="button" onclick="resumeDownload()">Download CV</button>
+			</div>
+
+            <div class="profile-picture">
+                <img src="img/instapic.jpg" alt="No">
+            </div>
+
+
+             <!-- -----------skills---------- -->
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="skills-list">
+            <div class="html-img">
+                <img src="img/html-5.png" alt="html logo"  style="size:4px"/>
+            </div>
+            <div>
+                <img src="img/css-3.png" alt="CSS logo" />
+            </div>
+            <div>
+                <img src="img/java-script.png" alt="JSlogo" />
+            </div>
+            <div>
+                <img src="img/python.jpg" alt="Python Logo" />
+            </div>
+            </div>
+        </div>     
+    </div>
+
+
+    <!-- -------projects------ -->
+    <div id="projects">
+        <div class="heading">
+            <h1>My Projects</h1>
+        </div>
+        <div class="project-holder">
+            <div class="project-card">
+				<h5>Porfolio Website</h5>
+                <img src="img/portfolio.png" alt="portfolio">
+				<div class="desc">
+					<p style="text-decoration: underline black;">A portfolio website is a customized online platform where people present their accomplishments, abilities, and work to prospective employers, partners, or clients. </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Click Here</a>
+					</p>
+				</div>
+			</div>
+
+            <div class="project-card">
+				<h5>Basic Calculator</h5>
+                <img src="img/calculator.png" alt="">
+				<div class="desc">
+					<p>This is a basic calculator that can perform addition, subtraction, multiplication, and division. You input two numbers and an operator, and it will provide the result of the operation.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Click Here</a>
+					</p>
+				</div>
+			</div>
+
+            <div class="project-card">
+				<h5>BlackJack Game</h5>
+                <img src="img/blackjack (1).png" alt="">
+				<div class="desc">
+					<p>This is a basic implementation of a text-based Blackjack game. Players are prompted to draw cards or pass, and the game compares the final scores to determine the winner.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Click Here</a>
+					</p>
+				</div>
+			</div>
+			
+			<div class="project-card">
+				<h5>BMI Calculator</h5>
+                <img src="img/bmicalculator.png" alt="">
+				<div class="desc">
+					<p>This is a simple bmi calculator that takes user's weight (in kilograms) and height (in centimeters) as input, calculates the BMI, and interprets the BMI to determine corresponding category (underweight, normal weight, overweight).</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Click Here</a>
+					</p>
+				</div>
+			</div>
+    </div>
+
+    <!-- -----------------------contact--------------------- -->
+    <div id="contact">
+        <div class="heading-contact">
+            <h1>Contact Me</h1><br>
+        </div>
+        <div class="contact-holder">
+            <div class="form">
+                <form name="messageForm" onsubmit="validatetheForm()">
+                    <input type="text" placeholder=" First name"> 
+                    <input type="text" placeholder=" Last name">
+                    <br> <br>
+                    <input type="email" id="email" placeholder=" E-mail address"><br><br>
+                    <input type="textarea" placeholder="Message" id="text-message">
+                    <div class="btn">
+                        <button onclick="sendMessage()">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="mail-phone-address">
+                <h2><br> <img src="img/blackmail.png" alt=""></h2>
+                <p style="color: aliceblue;">dongolkabin@gmail.com</p>
+                <h2> <br> <img src="img/location.png" alt=""></h2>
+                <p style="color: aliceblue;">Kathmandu, Nepal</p>
+                <h2> <br> <img src="img/phone.png" alt="" style="width: 30px; border-radius: 52%; height: 32px"></h2>
+                <p style="color: aliceblue;">+977 9853474733</p>
+                
+            </div>
+
+            <div class="contact-handles" style="color:aliceblue">       
+                        
+                <br> <a href="https://www.instagram.com/kabin_dangol/"><img src="img/insta2.png" alt=""></a>
+                <a href="https://www.facebook.com/kabin.dongol.16/"><img src="img/facebook.png" alt=""></a>
+                <a href="https://www.twitter.com/"><img src="img/twitter.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/kabin-dongol-maharjan-0bb3a4290/"><img src="img/linkedin.png" alt=""></a>
+                
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------footer------- -->
+    <footer>
+		<p>Kabin Dongol Maharjan</p>		
+		<p class="end">CopyRight &#169; || Kabin Dongol Maharjan || All rights reserved</p>
+	</footer>
+    
+    <script src="script/app.js"></script>
+</body>
+</html>
