@@ -4,35 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,200&family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,200&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- ----------home----------- -->
-    <header class="header">
-        <div class="left">
-            <h2 class="logo">Port<span>folio</span></h2>
-        </div>
-        <div class="center">
-            <nav>
-                <ul>
-                    <li><a href= "#">Home </a></li>
-                    <li><a href= ".about">About</a></li>
-                    <li><a href= "#">Skills</a></li>
-                    <li><a href= "#">Projects</a></li>
-                    <li><a href= "#">Contact</a></li>    
-                </ul>
-            </nav>
+    <div class="header">
+        <div class="container">
+            <div class="left">
+                <h2 class="logo">Kabin's <span>Portfolio</span></h2>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li><a href= "#">Home </a></li>
+                        <li><a href= "#">About</a></li>
+                        <li><a href= "#">Skills</a></li>
+                        <li><a href= "#">Projects</a></li>
+                        <li><a href= "#">Contact Me</a></li>    
+                    </ul>
+                </nav>
+            </div>
 
             <div class="tag-line">
                 <p>Hi, I am <span style="color:blue ; font-size: 80px ; font-weight:bold" >Kabin </span></p>
@@ -40,13 +33,15 @@
                 <button class="button-1">Hire me</button>
             </div>
         </div>
-    </header>
-
+        <hr style="width: 87%; margin-left:50px;">
+    </div>
+    <hr>
+    
     <!--------about-------->
     <div class="about">
             <div class="about-text">
 				<h2>About Me</h2>
-				<p>I am a second year IT student with great interest in web development. Apart from college, I am currently spending my leisure time working on web-development projects. I strive to enhances my knowledge and skills as i discover new things.</p>
+				<p>I am a second year IT student with great interest in web development. Apart from college, I am currently spending my leisure time working on web-development projects. I strive to enhance my knowledge and skills as I discover new things.</p>
 				<button type="button" onclick="resumeDownload()">Download CV</button>
 			</div>
 
@@ -74,6 +69,7 @@
             </div>
         </div>     
     </div>
+    <hr>
 
 
     <!-- -------projects------ -->
@@ -98,7 +94,7 @@
 				<h5>Basic Calculator</h5>
                 <img src="img/calculator.png" alt="">
 				<div class="desc">
-					<p>This is a basic calculator that can perform addition, subtraction, multiplication, and division. You input two numbers and an operator, and it will provide the result of the operation.</p>
+					<p>This is a basic calculator that can perform addition, subtraction, multiplication, and division. You input two numbers and an operator, and it will provide the result.</p>
 
 					<p style="text-align: center;">
 						<a class="button" href="#">Click Here</a>
@@ -122,13 +118,14 @@
 				<h5>BMI Calculator</h5>
                 <img src="img/bmicalculator.png" alt="">
 				<div class="desc">
-					<p>This is a simple bmi calculator that takes user's weight (in kilograms) and height (in centimeters) as input, calculates the BMI, and interprets the BMI to determine corresponding category (underweight, normal weight, overweight).</p>
+					<p>This is a simple bmi calculator that takes user's weight and height as input, calculates the BMI, and interprets the BMI to determine corresponding category.</p>
 
 					<p style="text-align: center;">
 						<a class="button" href="#">Click Here</a>
 					</p>
 				</div>
 			</div>
+        </div>
     </div>
 
     <!-- -----------------------contact--------------------- -->
@@ -139,10 +136,10 @@
         <div class="contact-holder">
             <div class="form">
                 <form name="messageForm" onsubmit="validatetheForm()">
-                    <input type="text" placeholder=" First name"> 
-                    <input type="text" placeholder=" Last name">
+                    <input type="text" placeholder= "Enter your First name"> 
+                    <input type="text" placeholder= "Enter your Last name">
                     <br> <br>
-                    <input type="email" id="email" placeholder=" E-mail address"><br><br>
+                    <input type="email" id="email" placeholder="Enter your E-mail address"><br><br>
                     <input type="textarea" placeholder="Message" id="text-message">
                     <div class="btn">
                         <button onclick="sendMessage()">Send Message</button>

@@ -1,0 +1,320 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* ----------home--------- */
+.home{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/bg1.webp);
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 26px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.logo span{
+	color: greenyellow;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 3px 8px;
+}
+nav ul li a:hover{
+	color: black;
+	background-color: greenyellow;
+	transition: .3s;
+}
+
+.home-content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+
+h1{
+	color: white;
+	margin: 20px  5px;
+	font-size: 70px;
+}
+h3{
+	color: white;
+	font-size: 35px;
+	margin-left: 10px;
+}
+
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+#form{
+	margin-right: -62px;
+}
+
+.search{
+	padding: 5px 9px;
+}
+
+.button1{
+	padding: 5px 15px;
+}
+
+button{
+	background-color:greenyellow;
+	font-weight: bold;
+	padding: 12px 30px;
+	transition: .4s; 
+}
+
+button:hover{
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+
+/* --------program-------- */
+.program{
+	background: #101010;
+	width: 100%;
+	height: 100vh;
+}
+.heading h2{
+	color: white;
+	font-size: 55px;
+	width: 1130px;
+	margin: 0px auto ;
+	padding-top: 20px;
+	justify-content: center;
+	text-align: center;
+}
+.heading p{
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 23px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	margin-top: 40px;
+}
+
+.container2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	margin-top: 40px;
+}
+
+.new-card{
+	height: 85px;
+	width: 330px;
+	border: 2px solid white;
+	margin: 15px;
+	text-align: center;	
+}
+.new-card p{
+	color: white;
+	font-weight: bold;
+}
+
+.new-card h2{
+	color: white;
+}
+
+.new-card:hover{
+	background-color: transparent;
+	border: 2px solid greenyellow;
+	cursor: pointer;
+}
+
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	border-radius: 15px ;
+	margin: 15px;
+	text-align: center;
+}
+
+.card:hover{
+    background-color: transparent;
+	border: 2px solid greenyellow;
+	cursor: pointer;
+    transition: 0.4s;
+}
+
+.card img{
+    width: 270px;
+    height: 180px;
+}
+
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.desc p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:greenyellow;
+	color: black;
+	text-decoration: none;
+	border: 2px solid ;
+	font-weight: bold;
+	padding: 9px 22px;
+	transition: .4s; 
+}
+
+.card .button:hover{
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+/* -----pricing------ */
+.pricing{
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+}
+
+.price-heading h2{
+	color: white;
+	font-size: 55px;
+	width: 1130px;
+	margin: 0px auto ;
+	padding-top: 20px;
+	justify-content: center;
+	text-align: center;
+}
+.price-heading p{
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 23px;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	margin-top: 20px;
+}
+
+.price-card{
+	height: 435px;
+	width: 335px;
+	padding: 20px 39px;
+	border: 2px solid greenyellow;
+	border-radius: 15px ;
+	margin: 25px 42px;
+	text-align: center;
+}
+
+.price-card:hover{
+    background-color: transparent;
+	border: transparent;
+	cursor: pointer;
+    transition: 0.4s;
+	filter:drop-shadow(16px 7px 8px rgba(210, 17, 17, 0.2));
+}
+
+h1 p{
+	margin-left: 150px;
+	font-size: 32px;
+}
+
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.desc p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+
+.list ul li{
+	color: white;
+	list-style-type: none;
+	line-height: 28px;
+}
+.price-card .button{
+	background-color:greenyellow;
+	color: black;
+	text-decoration: none;
+	border: 2px solid ;
+	font-weight: bold;
+	padding: 9px 22px;
+	transition: .4s; 
+}
+
+.price-card .button:hover{
+	background-color:black;
+	color: white;
+	cursor: pointer;
+}
+
+/* --------footer--------- */
+footer{
+    width: 100%;
+    height :200px;
+    display:flex;
+    flex-direction: column;
+    background-color: #111212;
+    justify-content: center;
+    align-items: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+
